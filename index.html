@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/lang.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -16,12 +17,17 @@
                 <a href="#home">Portfolio</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="contact">Contact</a></li>
             </ul>
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="th">ไทย</option>
+            </select>
+
             <div class="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -33,12 +39,12 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
-            <p class="hero-description">I create beautiful and functional web applications</p>
+            <h1><span data-i18n="hero_greeting">Hello, I'm</span> <span class="highlight">Nutthavirot</span></h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Full Stack Developer</p>
+            <p class="hero-description" data-i18n="hero_description">I create beautiful and functional web applications</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#projects" class="btn btn-primary" data-i18n="view_work">View My Work</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="get_in_touch">Get In Touch</a>
             </div>
         </div>
         <div class="hero-image">
@@ -49,22 +55,22 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a passionate Full Stack Developer with experience in creating web applications using modern technologies. I love solving complex problems and learning new technologies.</p>
+                    <p data-i18n="about_description">I am a passionate Full Stack Developer with experience in creating web applications using modern technologies. I love solving complex problems and learning new technologies.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <h3>2+</h3>
-                            <p>Years Experience</p>
+                            <p data-i18n="years_experience">Years Experience</p>
                         </div>
                         <div class="stat-item">
                             <h3>15+</h3>
-                            <p>Projects Completed</p>
+                            <p data-i18n="projects_completed">Projects Completed</p>
                         </div>
                         <div class="stat-item">
                             <h3>10+</h3>
-                            <p>Happy Clients</p>
+                            <p data-i18n="happy_clients">Happy Clients</p>
                         </div>
                     </div>
                 </div>
@@ -159,23 +165,23 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's work together</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    <h3 data-i18n="work_together">Let's work together</h3>
+                    <p data-i18n="always_interested">I'm always interested in hearing about new projects and opportunities.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
+                            <span>voltvolt.nut@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+66 12 345 6789</span>
+                            <span>+66 93 736 4217</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Bangkok, Thailand</span>
+                            <span>Chiang mai, Thailand</span>
                         </div>
                     </div>
                     <div class="social-links">
@@ -194,7 +200,7 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="send_message">Send Message</button>
                 </form>
             </div>
         </div>
@@ -203,7 +209,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. Software Engineering, RMUTL. All rights reserved.</p>
+            <p>&copy; 2025 Nutthavirot. Software Engineering, RMUTL. All rights reserved.</p>
         </div>
     </footer>
 
