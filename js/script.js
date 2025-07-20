@@ -58,3 +58,28 @@ contactForm.addEventListener('submit', (e) => {
         alert('Please fill in all fields.');
     }
 });
+
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const languageSwitcher = document.getElementById("language-switcher");
+
+  function updateLanguage(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang] && translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+    localStorage.setItem("preferredLang", lang);
+  }
+
+  // โหลดค่าภาษาที่บันทึกไว้
+  const savedLang = localStorage.getItem("preferredLang") || "en";
+  languageSwitcher.value = savedLang;
+  updateLanguage(savedLang);
+
+  languageSwitcher.addEventListener("change", (e) => {
+    updateLanguage(e.target.value);
+  });
+});
