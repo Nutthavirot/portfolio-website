@@ -15,11 +15,13 @@ const translations = {
     about_description: "I am a passionate Full Stack Developer with experience in creating web applications using modern technologies. I love solving complex problems and learning new technologies.",
     contact_title: "Get In Touch",
     send_message: "Send Message",
-    Years_Experience: "Years Experience",
-    Projects_Completed: "Projects Completed",
-    Happy_Clients: "Happy Clients",
+    years_Experience: "Years Experience",
+    projects_Completed: "Projects Completed",
+    happy_Clients: "Happy Clients",
     work_together: "Let's work together",
-    always_interested:"I'm always interested in hearing about new projects and opportunities."
+    always_interested: "I'm always interested in hearing about new projects and opportunities.",
+    my_skills: "My Skills",
+    my_projects: "My Projects"
   },
   th: {
     home: "หน้าหลัก",
@@ -40,6 +42,8 @@ const translations = {
     projects_completed: "โครงการที่เสร็จสมบูรณ์",
     happy_clients: "ลูกค้าที่มีความสุข",
     work_together: "มาทำงานร่วมกัน",
-    always_interested: "ฉันสนใจที่จะได้ยินเกี่ยวกับโครงการและโอกาสใหม่ๆ อยู่เสมอ"
+    always_interested: "ฉันสนใจที่จะได้ยินเกี่ยวกับโครงการและโอกาสใหม่ๆ อยู่เสมอ",
+    my_skills: "ทักษะของฉัน",
+    my_projects: "โครงการของฉัน"
   },
 };
